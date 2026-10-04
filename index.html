@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#12051f">
+<title>For Kiran Ramzan Ma'am 🖤</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#08020f;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ---------- BACKGROUND ---------- */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-5;
+    background:
+      radial-gradient(circle at 20% 20%,#7c2cff55,transparent 28%),
+      radial-gradient(circle at 80% 30%,#ff2f9250,transparent 25%),
+      radial-gradient(circle at 50% 90%,#00d9ff30,transparent 30%),
+      linear-gradient(135deg,#08020f,#170522,#090013);
+}
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-2;
+}
+
+.star{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.6;
+    animation:twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+    0%,100%{opacity:.15;transform:scale(.7)}
+    50%{opacity:1;transform:scale(1.4)}
+}
+
+/* ---------- LOADER ---------- */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:#08020f;
+    z-index:9999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:opacity 1s,visibility 1s;
+}
+
+.loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-box{
+    text-align:center;
+}
+
+.loader-heart{
+    font-size:65px;
+    animation:heartbeat 1s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1)}
+    25%{transform:scale(1.2)}
+    40%{transform:scale(1)}
+    60%{transform:scale(1.12)}
+}
+
+/* ---------- NAV ---------- */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(8,2,15,.45);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-weight:800;
+    font-size:18px;
+    color:#ff8acb;
+}
+
+.nav-btn{
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.07);
+    color:#fff;
+    padding:9px 15px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:#ff3f9c;
+    transform:translateY(-2px);
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:110px 20px 70px;
+    position:relative;
+}
+
+.hero-content{
+    max-width:900px;
+    animation:heroIn 1.3s ease forwards;
+}
+
+@keyframes heroIn{
+    from{opacity:0;transform:translateY(40px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 17px;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.06);
+    border-radius:50px;
+    color:#ff9bd4;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,9vw,95px);
+    line-height:1;
+    background:linear-gradient(90deg,#fff,#ff8acb,#b993ff,#fff);
+    background-size:250%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:gradientMove 5s linear infinite;
+}
+
+@keyframes gradientMove{
+    to{background-position:250%}
+}
+
+.hero h2{
+    margin-top:18px;
+    font-size:clamp(18px,3vw,27px);
+    font-weight:400;
+    color:#ddd;
+}
+
+.hero p{
+    max-width:680px;
+    margin:22px auto;
+    color:#bdb3c7;
+    line-height:1.8;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:30px;
+}
+
+.btn{
+    text-decoration:none;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:14px 23px;
+    border-radius:50px;
+    font-family:inherit;
+    font-weight:600;
+    transition:.35s;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+
+.primary{
+    background:linear-gradient(135deg,#ff2f92,#8e42ff);
+    box-shadow:0 10px 35px #ff2f9250;
+}
+
+.secondary{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+}
+
+.btn:hover{
+    transform:translateY(-5px) scale(1.03);
+}
+
+/* ---------- SECTIONS ---------- */
+
+section{
+    padding:100px 7%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title span{
+    color:#ff71ba;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(32px,5vw,50px);
+    margin-top:8px;
+}
+
+/* ---------- CARDS ---------- */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    padding:30px 24px;
+    border-radius:25px;
+    background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(12px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#ff65b5;
+    box-shadow:0 20px 50px #0005;
+}
+
+.card-icon{
+    font-size:38px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#aaa0b5;
+    line-height:1.7;
+    font-size:14px;
+}
+
+/* ---------- SHOP ---------- */
+
+.shop{
+    text-align:center;
+}
+
+.shop-box{
+    padding:55px 25px;
+    border-radius:35px;
+    background:
+      linear-gradient(135deg,#ff2f9230,#7e3cff30),
+      rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.12);
+    position:relative;
+    overflow:hidden;
+}
+
+.shop-box::before{
+    content:"🛍️";
+    position:absolute;
+    font-size:180px;
+    opacity:.035;
+    right:-20px;
+    bottom:-50px;
+}
+
+.shop-box h2{
+    font-family:'Playfair Display',serif;
+    font-size:45px;
+    margin-bottom:12px;
+}
+
+.shop-box p{
+    color:#c6bdcb;
+    margin-bottom:25px;
+}
+
+/* ---------- SECRET ---------- */
+
+.secret-section{
+    text-align:center;
+}
+
+.lock-box{
+    max-width:600px;
+    margin:auto;
+    padding:40px 25px;
+    border-radius:30px;
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.lock-icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.password-area{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:25px;
+}
+
+.password-area input{
+    width:180px;
+    padding:13px 18px;
+    border-radius:50px;
+    border:1px solid rgba(255,255,255,.18);
+    outline:none;
+    background:#12091b;
+    color:#fff;
+    text-align:center;
+    font-family:inherit;
+}
+
+.password-area button{
+    border:none;
+    border-radius:50%;
+    width:48px;
+    background:linear-gradient(135deg,#ff2f92,#783cff);
+    color:#fff;
+    cursor:pointer;
+}
+
+.error{
+    color:#ff668f;
+    margin-top:14px;
+    min-height:20px;
+    font-size:13px;
+}
+
+.secret-message{
+    display:none;
+    margin-top:25px;
+    text-align:left;
+    padding:30px;
+    border-radius:25px;
+    background:linear-gradient(145deg,#ff2f9218,#793cff18);
+    border:1px solid #ff7fc622;
+    animation:secretOpen .8s ease;
+}
+
+@keyframes secretOpen{
+    from{opacity:0;transform:scale(.92) translateY(20px)}
+    to{opacity:1;transform:scale(1) translateY(0)}
+}
+
+.secret-message.show{
+    display:block;
+}
+
+.secret-message h3{
+    text-align:center;
+    color:#ff9bd4;
+    margin-bottom:22px;
+}
+
+.secret-message p{
+    color:#ddd;
+    line-height:2;
+    font-size:14px;
+    white-space:pre-line;
+}
+
+/* ---------- GAME ---------- */
+
+.game{
+    text-align:center;
+}
+
+.game-box{
+    max-width:650px;
+    margin:auto;
+    padding:35px;
+    border-radius:30px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+}
+
+#gameArea{
+    height:250px;
+    position:relative;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:20px;
+    background:radial-gradient(circle,#2a123e,#0c0414);
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.heart{
+    position:absolute;
+    font-size:30px;
+    cursor:pointer;
+    user-select:none;
+    animation:heartFloat 2s linear forwards;
+}
+
+@keyframes heartFloat{
+    from{transform:translateY(30px) scale(.7);opacity:0}
+    20%{opacity:1}
+    to{transform:translateY(-180px) scale(1.2);opacity:0}
+}
+
+.score{
+    margin-top:15px;
+    color:#ff8acb;
+    font-weight:700;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    text-align:center;
+    padding:60px 20px 35px;
+    color:#81768c;
+}
+
+.footer-name{
+    color:#ff8acb;
+    font-weight:700;
+}
+
+.small{
+    font-size:12px;
+    margin-top:12px;
+}
+
+/* ---------- FLOATING ---------- */
+
+.float-heart{
+    position:fixed;
+    bottom:-30px;
+    pointer-events:none;
+    z-index:2;
+    animation:floatUp 7s linear forwards;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0) rotate(0);opacity:0}
+    10%{opacity:.8}
+    90%{opacity:.6}
+    100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:750px){
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:75px 5%;
+    }
+
+    .shop-box h2{
+        font-size:35px;
+    }
+
+    .password-area{
+        flex-direction:row;
+    }
+
+    .hero{
+        padding-top:130px;
+    }
+}
+
+@media(max-width:430px){
+    .password-area input{
+        width:150px;
+    }
+
+    .btn{
+        width:100%;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+    <div class="loader-box">
+        <div class="loader-heart">🖤</div>
+        <p>Preparing something special...</p>
+    </div>
+</div>
+
+<!-- STARS -->
+<div class="stars" id="stars"></div>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">For Kiran Ma'am 🖤</div>
+    <button class="nav-btn" onclick="document.getElementById('secret').scrollIntoView()">🔐 Secret</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-content">
+
+        <div class="badge">✨ A Small Surprise From A Student</div>
+
+        <h1>Kiran Ramzan</h1>
+
+        <h2>Congratulations on Your New Online Shop! 🛍️</h2>
+
+        <p>
+            Ma'am, kabhi kabhi kuch log sirf teacher nahi hotay...
+            woh life mein ek achi memory, ek inspiration aur ek respect ban jate hain. 🖤
+        </p>
+
+        <div class="buttons">
+            <a class="btn primary"
+               href="https://wa.me/c/923706903659"
+               target="_blank">
+               🛍️ Visit Your Shop
+            </a>
+
+            <a class="btn secondary" href="#secret">
+                🔐 Special Message
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<!-- LEARNING -->
+<section>
+    <div class="section-title">
+        <span>More Than A Teacher</span>
+        <h2>What I Learned From You 🫶</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Knowledge</h3>
+            <p>
+                Aap se sirf books wali knowledge nahi,
+                balkay life ko samajhne ka bhi bohat kuch seekha.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🌟</div>
+            <h3>Confidence</h3>
+            <p>
+                Aap ki guidance ne hamesha ye feel karwaya
+                ke seekhne ke liye questions poochna bilkul okay hai.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🖤</div>
+            <h3>Respect</h3>
+            <p>
+                Isi liye aap mere liye sirf teacher nahi,
+                balkay ek respected person hain.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop">
+
+    <div class="section-title">
+        <span>A New Beginning</span>
+        <h2>Your Online Shop 🛍️</h2>
+    </div>
+
+    <div class="shop-box">
+
+        <h2>Many Many Congratulations! 🎉</h2>
+
+        <p>
+            Allah Pak aap ke is naye kaam mein bohat barkat,
+            kamyabi aur khushiyan ata farmaye. Ameen 🤲
+        </p>
+
+        <a class="btn primary"
+           href="https://wa.me/c/923706903659"
+           target="_blank">
+           🛍️ Open WhatsApp Shop
+        </a>
+
+    </div>
+
+</section>
+
+<!-- SECRET MESSAGE -->
+<section class="secret-section" id="secret">
+
+    <div class="section-title">
+        <span>Private • Personal • Special</span>
+        <h2>🔐 Special Message</h2>
+    </div>
+
+    <div class="lock-box">
+
+        <div class="lock-icon">🔒</div>
+
+        <h3>Ma'am Kiran Ramzan</h3>
+
+        <p style="color:#a99eaf;margin-top:8px;">
+            This little message is locked specially for you. 🖤
+        </p>
+
+        <div class="password-area">
+            <input
+                type="password"
+                id="password"
+                maxlength="4"
+                placeholder="Enter PIN"
+                inputmode="numeric"
+            >
+            <button onclick="unlockMessage()">➜</button>
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="secret-message" id="secretMessage">
+
+            <h3>💌 Special Message For Ma'am Kiran Ramzan</h3>
+
+            <p>
+ASLAM O ALAIKUM MEAM 🖤
+
+Kase hai Meam? 😁
+
+Ap k leye kch special karna chata tha leqan kch b smj ni aara tha 😁🚩🫶🖤
+
+To socha choti si ap ke liye website bana doon,
+ap ke is chotay se online shop ke liye.
+
+Bohat bohat MUBARAK ho ap ko! 🥳🛍️
+
+Allah Pak ap ko har qadam par kamyabi de,
+ap ko sehat wali lambi zindagi ata farmaye. Ameen 🤲
+
+Ap hamesha hasti, muskurati rahen,
+aur apne is na-laik student ke aas paas rahen 😁🌚
+
+Q ke mujhe kabhi bhi ap ki zaroorat par sakti hai
+meri problems ke liye 😁😁🖤🖤🥹🥹
+
+Janti hain na,
+main ap ko koi FEE nahi dene wala 😂
+
+Lekin aap ne galay theek parhaya,
+ap ka dimagh kharab karne ke liye
+fazool questions le kar zaroor aata raha 😁🫶🤪
+
+KHER...
+
+Kabhi meri zaroorat paray to hamesha mujhe yaad karna. 🖤
+
+YOU ARE MY BEST TEACHER ❤️
+
+Because school mein meri koi teacher nahi bani 😁😝
+
+Allah Pak ap ko hamesha muskurata rakhe,
+hamesha khush rakhe,
+aur ap ke har kaam mein barkat de.
+
+AAMEEN SUM AAMEEN 🤲🖤
+
+— Your Student,
+Shahban Ali 🫶
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MINI GAME -->
+<section class="game">
+
+    <div class="section-title">
+        <span>Little Bit Of Fun 😁</span>
+        <h2>Catch The Hearts 🖤</h2>
+    </div>
+
+    <div class="game-box">
+
+        <p style="color:#aaa0b5;">
+            Hearts ko click karo aur score banao! 😂🖤
+        </p>
+
+        <div id="gameArea"></div>
+
+        <div class="score">
+            Score: <span id="score">0</span>
+        </div>
+
+        <button class="btn primary"
+                style="margin-top:20px"
+                onclick="startGame()">
+            🎮 Start Game
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        Made with respect, duas & a little bit of madness 😂🖤
+    </p>
+
+    <p style="margin-top:10px;">
+        <span class="footer-name">
+            Proudly Presented by Student Shahban Ali
+        </span>
+    </p>
+
+    <p class="small">
+        For the best teacher — Kiran Ramzan Ma'am 🌸
+    </p>
+
+</footer>
+
+<script>
+
+/* ---------- LOADER ---------- */
+
+window.addEventListener("load",()=>{
+    setTimeout(()=>{
+        document.getElementById("loader").classList.add("hide");
+        createConfetti();
+    },1200);
+});
+
+
+/* ---------- STARS ---------- */
+
+const stars=document.getElementById("stars");
+
+for(let i=0;i<100;i++){
+
+    const star=document.createElement("div");
+
+    star.className="star";
+
+    star.style.left=Math.random()*100+"%";
+    star.style.top=Math.random()*100+"%";
+
+    star.style.animationDelay=(Math.random()*3)+"s";
+
+    stars.appendChild(star);
+}
+
+
+/* ---------- FLOATING HEARTS ---------- */
+
+function floatingHeart(){
+
+    const heart=document.createElement("div");
+
+    heart.className="float-heart";
+
+    const emojis=["🖤","🤍","💜","💖","✨"];
+
+    heart.innerText=emojis[Math.floor(Math.random()*emojis.length)];
+
+    heart.style.left=Math.random()*100+"%";
+    heart.style.fontSize=(14+Math.random()*20)+"px";
+    heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+}
+
+setInterval(floatingHeart,900);
+
+
+/* ---------- CONFETTI ---------- */
+
+function createConfetti(){
+
+    const colors=[
+        "#ff3f9c",
+        "#8f4cff",
+        "#ffcf5c",
+        "#63e6ff",
+        "#ffffff"
+    ];
+
+    for(let i=0;i<90;i++){
+
+        const c=document.createElement("div");
+
+        c.style.position="fixed";
+        c.style.width="7px";
+        c.style.height="12px";
+        c.style.background=colors[Math.floor(Math.random()*colors.length)];
+        c.style.left=Math.random()*100+"vw";
+        c.style.top="-20px";
+        c.style.zIndex="9998";
+        c.style.borderRadius="3px";
+
+        const duration=2+Math.random()*3;
+
+        c.animate(
+            [
+                {
+                    transform:"translateY(0) rotate(0deg)",
+                    opacity:1
+                },
+                {
+                    transform:`translateY(110vh) rotate(${Math.random()*1000}deg)`,
+                    opacity:0
+                }
+            ],
+            {
+                duration:duration*1000,
+                easing:"cubic-bezier(.2,.7,.3,1)"
+            }
+        );
+
+        document.body.appendChild(c);
+
+        setTimeout(()=>c.remove(),duration*1000);
+    }
+}
+
+
+/* ---------- PASSWORD ---------- */
+
+function unlockMessage(){
+
+    const input=document.getElementById("password");
+    const error=document.getElementById("error");
+    const message=document.getElementById("secretMessage");
+
+    if(input.value==="8518"){
+
+        message.classList.add("show");
+
+        error.style.color="#71ffb1";
+        error.innerText="Unlocked! Welcome Ma'am 🖤✨";
+
+        createConfetti();
+
+        setTimeout(()=>{
+            message.scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
+        },200);
+
+    }else{
+
+        error.style.color="#ff668f";
+        error.innerText="Oops! Wrong PIN 😁 Try again.";
+
+        input.animate(
+            [
+                {transform:"translateX(0)"},
+                {transform:"translateX(-8px)"},
+                {transform:"translateX(8px)"},
+                {transform:"translateX(-5px)"},
+                {transform:"translateX(0)"}
+            ],
+            {
+                duration:350
+            }
+        );
+
+    }
+}
+
+
+/* ---------- ENTER KEY ---------- */
+
+document.getElementById("password").addEventListener("keydown",(e)=>{
+    if(e.key==="Enter"){
+        unlockMessage();
+    }
+});
+
+
+/* ---------- MINI GAME ---------- */
+
+let score=0;
+let gameRunning=false;
+let gameTimer;
+
+function startGame(){
+
+    if(gameRunning) return;
+
+    score=0;
+    document.getElementById("score").innerText=score;
+
+    gameRunning=true;
+
+    const area=document.getElementById("gameArea");
+
+    area.innerHTML="";
+
+    gameTimer=setInterval(()=>{
+
+        if(!gameRunning){
+            clearInterval(gameTimer);
+            return;
+        }
+
+        const heart=document.createElement("div");
+
+        heart.className="heart";
+        heart.innerText=["🖤","💖","💜","🤍"][Math.floor(Math.random()*4)];
+
+        heart.style.left=Math.random()*90+"%";
+        heart.style.bottom="0px";
+
+        heart.addEventListener("click",()=>{
+
+            score++;
+
+            document.getElementById("score").innerText=score;
+
+            heart.remove();
+
+            if(score%5===0){
+                createConfetti();
+            }
+
+        });
+
+        area.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },2000);
+
+    },650);
+
+    setTimeout(()=>{
+
+        gameRunning=false;
+
+        clearInterval(gameTimer);
+
+        area.innerHTML=`
+            <div style="
+                position:absolute;
+                inset:0;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                flex-direction:column;
+                gap:8px;
+            ">
+                <div style="font-size:45px">🎉</div>
+                <strong>Game Over!</strong>
+                <span style="color:#ff8acb">
+                    Final Score: ${score}
+                </span>
+            </div>
+        `;
+
+    },20000);
+}
+
+</script>
+
+</body>
+</html>
